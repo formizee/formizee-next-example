@@ -14,8 +14,18 @@
 	}
 }
 
-body {
-	color: var(--foreground);
-	background: var(--background);
-	font-family: Arial, Helvetica, sans-serif;
+form {
+	@apply flex flex-col w-full max-w-96 sm:max-w-[420px] gap-8 items-center justify-center mt-8;
+
+	label {
+		@apply flex flex-col w-full gap-2 text-sm text-neutral-600 dark:text-neutral-400;
+	}
+
+	input {
+		@apply flex h-9 w-full rounded-md border border-neutral-200 dark:border-neutral-800 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors placeholder:text-neutral-400 dark:placeholder:text-neutral-600 focus-visible:outline-none ring-neutral-300 dark:ring-neutral-700 focus-visible:ring-1;
+	}
+
+	button {
+		@apply h-10 w-full rounded-md text-neutral-50 dark:text-neutral-950 font-semibold font-secondary border-2 hover:border-neutral-500 dark:hover:border-neutral-400 hover:bg-neutral-800 dark:hover:bg-neutral-300 border-neutral-700 dark:border-neutral-300 bg-neutral-900 dark:bg-neutral-100;
+	}
 }

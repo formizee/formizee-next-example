@@ -14,7 +14,7 @@ Deploy the example using [Vercel](https://vercel.com):
 
 ```tsx
 // Update this //
-const ENDPOINT = 'enp_123456'
+const ENDPOINT = 'enp_123456';
 ```
 
 2. Install dependencies:
